@@ -1,8 +1,8 @@
-DESCRIPTION = "Library for DYnamic Programmable LOgic configuration"
+DESCRIPTION = "Library for Datra configuration"
 LICENSE = "LGPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://COPYING;md5=e6a600fd5e1d9cbde2d983680233ad02"
 
-SRCREV = "d19a5b7e350a579cf563bc75f22411ae73b87c4b"
+SRCREV = "ac740f79607116e53e57fd68d7530205b99c8cbb"
 
 inherit autotools gitpkgv
 
@@ -15,13 +15,13 @@ SRC_URI = "${GITHUB_TOPIC_URI}/${BPN};protocol=https;branch=master"
 
 PACKAGES =+ "${PN}-test ${PN}-demo ${PN}sw-dev ${PN}sw"
 FILES:${PN}-test = "${bindir}/test*"
-FILES:${PN}-demo = "${bindir}/dyplodemo*"
+FILES:${PN}-demo = "${bindir}/datrademo*"
 
 # Split the software library into its own package
 FILES:${PN}sw-dev = "${libdir}/${PN}sw.so \
                      ${libdir}/pkgconfig/${PN}sw.pc \
-                     ${includedir}/dyplo/filequeue.hpp \
-                     ${includedir}/dyplo/*scheduler.hpp \
-                     ${includedir}/dyplo/*process.hpp \
+                     ${includedir}/datra/filequeue.hpp \
+                     ${includedir}/datra/*scheduler.hpp \
+                     ${includedir}/datra/*process.hpp \
                      "
 FILES:${PN}sw = "${libdir}/${PN}sw.so*"

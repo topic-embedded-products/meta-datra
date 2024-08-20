@@ -1,7 +1,7 @@
-DESCRIPTION = "Commandline example application for DYPLO."
+DESCRIPTION = "Commandline example application for DATRA."
 LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://COPYING;md5=9eef91148a9b14ec7f9df333daebc746"
-DEPENDS = "libdyplo"
+DEPENDS = "libdatra"
 
 inherit autotools pkgconfig gitpkgv
 

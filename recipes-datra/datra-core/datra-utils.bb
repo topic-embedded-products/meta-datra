@@ -1,8 +1,8 @@
-DESCRIPTION = "Commandline utilities for DYPLO. Also demonstrates how to compile and link with libdyplo."
+DESCRIPTION = "Commandline utilities for DATRA. Also demonstrates how to compile and link with libdatra."
 LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://COPYING;md5=9eef91148a9b14ec7f9df333daebc746"
-DEPENDS = "libdyplo"
-SRCREV = "68aeb9a961cd24444fa3b9dae9947d1d7958214d"
+DEPENDS = "libdatra"
+SRCREV = "0f898a44006a39c26f8e1f1a77cf233dd17beb57"
 
 inherit autotools pkgconfig gitpkgv
 
