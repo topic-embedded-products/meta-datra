@@ -3,7 +3,7 @@ MODULE = "datra"
 LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://COPYING;md5=9eef91148a9b14ec7f9df333daebc746"
 
-SRCREV = "55fae03085eae773176325a9305108b3316970fc"
+SRCREV = "e66dd45a828ae47461dc34a455b3fc886314d835"
 
 inherit module gitpkgv
 
